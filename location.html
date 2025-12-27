@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> location part </title>
+  <link rel="stylesheet" href="./location.css">
+</head>
+
+<body>
+
+
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="logo">
+        🌍 Geo<span>Finder</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a target="_blank" href="./location.html">Location</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <div class="toolbar">
+        <button id="loadBtn" class="nav-btn">
+          Get Location
+        </button>
+      </div>
+
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="card">
+      <h1>Foydalanuvchi joylashuvini aniqlash</h1>
+
+
+
+      <p id="status" class="status"></p>
+
+      <div class="grid">
+        <div class="kv"><b>I P:</b> <span id="ip">—</span> <button id="copyIp" class="chip">Copy</button></div>
+        <div class="kv"><b>Hostname:</b> <span id="hostname">—</span></div>
+        <div class="kv"><b>Mamlakat:</b> <span id="country">—</span> <span id="flag">🏳️</span></div>
+        <div class="kv"><b>Viloyat/Region:</b> <span id="region">—</span></div>
+        <div class="kv"><b>Shahar:</b> <span id="city">—</span></div>
+        <div class="kv"><b>Koordinata:</b> <span id="coords">—</span></div>
+        <div class="kv"><b>Indeks:</b> <span id="postal">—</span></div>
+        <div class="kv"><b>Vaqt zonasi:</b> <span id="tz">—</span> (<span id="localTime">—</span>)</div>
+        <div class="kv"><b>ISP / AS:</b> <span id="org">—</span></div>
+        <div class="kv"><b>Manzil turi:</b> <span id="ipType">—</span></div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          
+        </iframe>
+      </div>
+
+      <div class="links">
+        <a id="openMaps" href="#" target="_blank" rel="noreferrer">Open in Google Maps</a>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

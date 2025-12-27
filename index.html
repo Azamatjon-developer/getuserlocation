@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foydalanuvchi joylashuvi</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="logo">
+        🌍 Geo<span>Finder</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a target="_blank" href="./location.html">Location</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <div class="toolbar">
+        <a target="_blank" href="./location.html">
+          <button id="loadBtn" class="nav-btn">
+            Get Location
+          </button>
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+
+
+  <main class="home container">
+
+    <!-- HERO / INTRO -->
+    <section class="hero">
+      <h1>Foydalanuvchi joylashuvini aniqlash xizmati</h1>
+      <p>
+        Ushbu loyiha foydalanuvchining <b>IP manzili</b> orqali uning
+        <b>mamlakati, shahri, koordinatalari, vaqt zonasi</b> va
+        <b>internet provayderi</b> haqida ma’lumotlarni aniqlab beradi.
+      </p>
+
+      <p>
+        Loyiha <b>HTTP requests</b>, <b>API</b> va <b>real-time data</b>
+        bilan ishlashni o‘rganish uchun mo‘ljallangan.
+      </p>
+
+      <a href="./location.html" class="hero-btn">Joylashuvni aniqlash</a>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats">
+      <h2>Loyiha statistikasi</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>🌍</h3>
+          <p class="stat-value">190+</p>
+          <p class="stat-label">Mamlakatlar</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>📡</h3>
+          <p class="stat-value">10 000+</p>
+          <p class="stat-label">IP bazasi</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>⚡</h3>
+          <p class="stat-value">1 soniya</p>
+          <p class="stat-label">Javob vaqti</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>🛡️</h3>
+          <p class="stat-value">100%</p>
+          <p class="stat-label">Xavfsiz</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLE -->
+    <section class="info-table">
+      <h2>Olinadigan ma’lumotlar</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Ma’lumot nomi</th>
+            <th>Tavsif</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>IP manzil</td>
+            <td>Foydalanuvchining internet manzili</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mamlakat</td>
+            <td>IP qaysi davlatga tegishli</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Shahar</td>
+            <td>Foydalanuvchi joylashgan shahar</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Koordinatalar</td>
+            <td>Latitude va Longitude</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Vaqt zonasi</td>
+            <td>Hududga mos vaqt zonasi</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>ISP</td>
+            <td>Internet provayder nomi</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
